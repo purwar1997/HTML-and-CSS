@@ -1,0 +1,26 @@
+body {
+  background-color: #b9345a;
+  font-family: "Verdana";
+}
+
+div {
+  margin: 10px;
+}
+
+h1,
+h2 {
+  margin-top: 15px;
+  margin-left: 10px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+a {
+  color: #242b2e;
+  font-weight: bold;
+}
+
+.course {
+  border: 3px solid #242b2e;
+  padding: 7px;
+}
