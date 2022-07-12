@@ -10,11 +10,106 @@
       href="https://asset-cdn.learnyst.com/assets/schools/2410/resources/images/logo_lco_4dsl6o.png"
       type="image/x-icon"
     />
+    <style>
+      body {
+        font-family: "Verdana";
+        font-size: 15px;
+        color: #242b2e;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <h1>Welcome to Contact page</h1>
-    <h2>Contact</h2>
+    <h2>You can reach us using this form</h2>
+    <hr />
     <h3>To visit home page, <a href="../index.html">click here</a></h3>
     <h3>To visit service page, <a href="../Service/service.html">click here</a></h3>
+
+    <div class="contact-form">
+      <form action="" method="GET">
+        <!-- Values inside for and id attributes should be same -->
+        <!-- text input field -->
+        <label for="fullname">Fullname </label>
+        <input type="text" name="fullname" placeholder="Full name" id="fullname" autofocus required /><br /><br />
+
+        <!-- number field -->
+        <label for="age">Age </label>
+        <input type="number" name="age" max="30" min="18" id="age" required /><br /><br />
+
+        <!-- email field -->
+        <label for="email">Email </label>
+        <input type="email" name="email" placeholder="Email" id="email" /><br /><br />
+
+        <!-- password field -->
+        <label for="password">Password </label>
+        <input type="password" name="password" placeholder="Password" id="password" required /><br /><br />
+
+        <!-- name attribute acts as a key 
+             value attribute acts as a value -->
+
+        <!-- radio buttons -->
+        <label>Select your gender: </label><br /><br />
+        <label><input type="radio" name="gender" value="male" required />Male</label><br />
+        <label><input type="radio" name="gender" value="female" />Female</label><br />
+        <label><input type="radio" name="gender" value="other" />Other</label><br /><br />
+
+        <!-- checkboxes -->
+        <label>Choose your favourite languages: </label><br /><br />
+        <input type="checkbox" name="language" value="JavaScript" id="javascript" />
+        <label for="javascript">JavaScript</label><br />
+
+        <input type="checkbox" name="language" value="C++" id="C++" />
+        <label for="C++">C++</label><br />
+
+        <input type="checkbox" name="language" value="Swift" id="swift" />
+        <label for="swift">Swift</label><br />
+
+        <input type="checkbox" name="language" value="Python" id="python" />
+        <label for="python">Python</label><br /><br />
+
+        <label>Which social media do you prefer?</label><br /><br />
+        <label><input type="checkbox" name="social-media" value="Facebook" />Facebook</label><br />
+        <label><input type="checkbox" name="social-media" value="Instagram" />Instagram</label><br />
+        <label><input type="checkbox" name="social-media" value="Twitter" />Twitter</label><br />
+        <label><input type="checkbox" name="social-media" value="LinkedIn" />LinkedIn</label><br /><br />
+
+        <!-- dropdown list-->
+        <label for="country">Select your country </label>
+        <select name="country" id="country" required>
+          <option value="select country">--select your country--</option>
+          <option value="India" selected>India</option>
+          <option value="USA">USA</option>
+          <option value="Israel">Israel</option>
+          <option value="Japan">Japan</option>
+          <option value="China">China</option></select
+        ><br /><br />
+
+        <label for="city">City </label>
+        <select name="city" id="city" required>
+          <option value="select city">--select your city--</option>
+          <option value="Etawah">Etawah</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Pune">Pune</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Gujrat">Gujrat</option></select
+        ><br /><br />
+
+        <!-- textarea (input box) -->
+        <label for="qna-box">Have any question, ask us </label><br /><br />
+        <textarea name="question" id="qna-box" cols="60" rows="7" placeholder="Ask anything..."></textarea><br /><br />
+
+        <label for="review-box">Post reviews about us</label><br /><br />
+        <textarea name="reviews" id="review-box" cols="50" rows="6" placeholder="Your reviews..." required></textarea
+        ><br /><br />
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </div>
   </body>
 </html>
